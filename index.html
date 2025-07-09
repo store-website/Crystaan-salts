@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crystaan Salts</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    /* Navbar */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 15px 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.8rem;
+      color: #b97251;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .logo-img {
+      height: 40px;
+      width: auto;
+      border-radius: 5px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #444;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #b97251;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to right, #fceee4, #f8f3f0);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-top: 80px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: #b97251;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      color: #555;
+    }
+
+    /* Product Section */
+    .product-section {
+      padding: 80px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      background-color: #fff;
+    }
+
+    .product-card {
+      max-width: 350px;
+      background: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .product-card img {
+      width: 250px;
+      margin-bottom: 20px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .product-card h2 {
+      font-size: 1.8rem;
+      color: #b97251;
+      margin-bottom: 10px;
+    }
+
+    .product-card p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+      color: #444;
+    }
+
+    .price {
+      font-size: 1.3rem;
+      color: #000;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .buy-btn {
+      background-color: #b97251;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .buy-btn:hover {
+      background-color: #a76043;
+    }
+
+    /* About Section */
+    .about, .contact {
+      padding: 80px 30px;
+      text-align: center;
+    }
+
+    .about h2, .contact h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #b97251;
+    }
+
+    .about p, .contact p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #fff3ea;
+      color: #555;
+      margin-top: 50px;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2.2rem; }
+      nav ul { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="logo">
+    <img src="logo.png" alt="Crystaan Logo" class="logo-img">
+    <span>Crystaan Salts</span>
+  </div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#product">Product</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <h1>Pure Himalayan Salt</h1>
+  <p>Harvested from the ancient Khewra mines, Crystaan Salt is rich in minerals and 100% natural. Perfect for your kitchen and wellness routines.</p>
+</section>
+
+<!-- Product Section -->
+<section class="product-section" id="product">
+
+  <!-- 500g -->
+  <div class="product-card">
+    <img src="product.png" alt="Crystaan Himalayan Salt 500g" />
+    <h2>Pink Himalayan Salt</h2>
+    <p><strong>Weight: 500 grams</strong><br>
+       Origin: Khewra Mines, Pakistan<br>
+       Grade: Premium Edible Salt<br>
+       Use: Cooking, Bathing, Detox, Healing</p>
+    <div class="price">PKR 200</div>
+    <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+  </div>
+
+  <!-- 1kg -->
+  <div class="product-card">
+    <img src="product.png" alt="Crystaan Himalayan Salt 1kg" />
+    <h2>Pink Himalayan Salt</h2>
+    <p><strong>Weight: 1 kg</strong><br>
+       Origin: Khewra Mines, Pakistan<br>
+       Grade: Premium Edible Salt<br>
+       Use: Cooking, Bathing, Detox, Healing</p>
+    <div class="price">PKR 350</div>
+    <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+  </div>
+
+  <!-- 2kg -->
+  <div class="product-card">
+    <img src="product.png" alt="Crystaan Himalayan Salt 2kg" />
+    <h2>Pink Himalayan Salt</h2>
+    <p><strong>Weight: 2 kg</strong><br>
+       Origin: Khewra Mines, Pakistan<br>
+       Grade: Premium Edible Salt<br>
+       Use: Cooking, Bathing, Detox, Healing</p>
+    <div class="price">PKR 650</div>
+    <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+  </div>
+
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+  <h2>About Us</h2>
+  <p>Crystaan Salts is dedicated to bringing the purity and wellness of the Himalayas to your home. With direct sourcing from Khewra, we ensure quality, cleanliness and mineral richness in every grain. Our mission is to promote natural health through salt.</p>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+  <h2>Contact</h2>
+  <p>For bulk orders, custom packaging or queries, reach out via WhatsApp or Email:<br><br>
+    📞 WhatsApp: <a href="https://wa.me/c/923400151787" style="color:#b97251;">Click here</a><br>
+    ✉️ Email: crystaansalts@gmail.com
+  </p>
+</section>
+
+<!-- Footer -->
+<footer>
+  &copy; 2025 Crystaan Salts. All rights reserved.
+</footer>
+
+<script>
+  function buyNow() {
+    window.location.href = "https://wa.me/c/923400151787";
+  }
+</script>
+
+</body>
+</html>
